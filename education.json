@@ -1,0 +1,12 @@
+{
+	"schools": [{
+		"name": "Universidad Católica del Uruguay",
+		"location": "Montevideo, Uruguay",
+		"degree": "Ingeniero en Informática",
+		"majors": "Computer Science",
+		"dates": "2013",
+		"url": "www.ucu.edu.uy"
+		},{
+		"onlineCourses": []
+		}]
+}
