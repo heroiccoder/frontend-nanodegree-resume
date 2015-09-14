@@ -1,8 +1,8 @@
 {
 	"schools": [{
-		"name": "Universidad Católica del Uruguay",
+		"name": "Catholic University",
 		"location": "Montevideo, Uruguay",
-		"degree": "Ingeniero en Informática",
+		"degree": "IT Engineer",
 		"majors": "Computer Science",
 		"dates": "2013",
 		"url": "www.ucu.edu.uy"

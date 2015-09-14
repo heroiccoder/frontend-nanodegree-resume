@@ -53,12 +53,21 @@ var bio = {
 }
 
 var header = $("#header");
-header.prepend(HTMLheaderRole.replace("%data%", bio.role));
-$("#header").prepend(HTMLheaderName.replace("%data%", bio.name));
+var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
+var formattedName = HTMLheaderName.replace("%data%", bio.name);
+header.prepend(formattedRole);
+header.prepend(formattedName);
 var topContacts = $("#topContacts");
 topContacts.append(HTMLmobile.replace("%data%", bio.contacts.mobile));
 topContacts.append(HTMLemail.replace("%data%", bio.contacts.email));
 topContacts.append(HTMLtwitter.replace("%data%", bio.contacts.twitter));
 topContacts.append(HTMLgithub.replace("%data%", bio.contacts.github));
-
+if(bio.skills!=undefined && bio.skills.length>0)
+{
+	header.append(HTMLskillsStart);
+	for(var i =0; i < bio.skills.length)
+	{
+		header.append(HTMLskills.replace("%data%", bio.skills[i]);
+	}
+}
 
